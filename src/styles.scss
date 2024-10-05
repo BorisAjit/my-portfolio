@@ -44,16 +44,26 @@ $my-portfolio-theme: mat.define-theme((
 }
 
 @layer utilities {
-      /* Hide scrollbar for Chrome, Safari and Opera */
-      .no-scrollbar::-webkit-scrollbar {
-          display: none;
-      }
-     /* Hide scrollbar for IE, Edge and Firefox */
-      .no-scrollbar {
-          -ms-overflow-style: none;  /* IE and Edge */
-          scrollbar-width: none;  /* Firefox */
-    }
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
   }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+}
+
+@layer components {
+  .bottom-nav {
+    @apply bottom-5 w-[560px] lg:w-3/6 fixed left-1/2 transform -translate-x-1/2 rounded-full shadow-lg bg-primary z-10;
+  }
+  .top-nav {
+    @apply top-5 w-[560px] lg:w-3/6 fixed left-1/2 transform -translate-x-1/2 rounded-full shadow-lg bg-primary z-10;
+  }
+}
+
 
 html, body {
   height: 100%;
