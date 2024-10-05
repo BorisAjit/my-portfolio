@@ -1,0 +1,9 @@
+<header class="bottom-5 w-[560px] lg:w-3/6 fixed left-1/2 transform -translate-x-1/2 rounded-full shadow-lg bg-primary z-10">
+  <nav class="flex">
+    <button class="flex-auto hover:bg-secondary rounded-l-full" [class.active]="activePage==='home'" (click)="scrollTo('home')">Home</button>
+    <button class="flex-auto hover:bg-secondary" (click)="scrollTo('about')" [class.active]="activePage==='about'">About</button>
+    <button class="flex-auto hover:bg-secondary" (click)="scrollTo('skills')"  [class.active]="activePage==='skills'">Skills</button>
+    <button class="flex-auto hover:bg-secondary" (click)="scrollTo('experience')" [class.active]="activePage==='experience'">Experience</button>
+    <button class="flex-auto hover:bg-secondary rounded-r-full" (click)="scrollTo('contact')" [class.active]="activePage==='contact'">Contact</button>
+  </nav>
+</header>

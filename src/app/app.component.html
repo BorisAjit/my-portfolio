@@ -1,0 +1,6 @@
+<app-navbar [activePage]="currentSection"/>
+<div #scrollContainer (scroll)="onScroll()" class="h-screen snap-y snap-mandatory overflow-y-auto no-scrollbar">
+  <app-home/>
+  <app-about/>
+  <app-skills/>
+</div>
